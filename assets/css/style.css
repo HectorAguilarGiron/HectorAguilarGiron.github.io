@@ -108,3 +108,52 @@ section ul li {
 .site-footer:hover {
     opacity: 1;
 }
+
+/* MOBILE — FULL PHONE COMPATIBILITY */
+@media (max-width: 700px) {
+
+    /* Body padding reduced so content fits */
+    body {
+        padding: 10px;
+    }
+
+    /* Header stays centered and compact */
+    header.primary {
+        padding: 16px;
+        border-radius: 6px;
+    }
+
+    /* Stack nav buttons vertically */
+    nav.primary ul {
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Make each button full width + wrap text */
+    nav.primary ul li a {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        white-space: normal;
+        font-size: 1rem;
+    }
+
+    /* Main content spacing */
+    main {
+        margin: 20px auto;
+        padding: 0 6px;
+    }
+
+    /* Section titles scale down */
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Footer spacing */
+    .site-footer {
+        font-size: 0.85rem;
+        padding: 16px;
+    }
+}
